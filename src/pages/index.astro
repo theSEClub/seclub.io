@@ -6,7 +6,7 @@ import Card from '../components/Card.astro';
 import Footer from '../components/Footer/Footer.astro'
 
 interface MarkdownFrontmatter {
-  date: number;
+  published_on: string;
 }
 
 const title = 'SE Club';
@@ -14,7 +14,7 @@ const description = 'we influence creativity';
 const seoDescription = 'SE Club blog website';
 
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./posts/*.md');
-let sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.published_on).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+let sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.published_on).valueOf() - new Date(a.frontmatter.published_on).valueOf());
 
 sortedPosts = sortedPosts.slice(0, 6);
 
