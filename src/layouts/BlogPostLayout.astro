@@ -4,7 +4,7 @@ import BaseHead from '../components/Head/BaseHead.astro';
 import BlogPost from '../components/BlogPost.astro';
 
 const {content} = Astro.props;
-const {title, description, date, image, youtube, author, major, published_on} = content;
+const {title, description, image, youtube, author, major, published_on} = content;
 ---
 <html lang={ content.lang || 'en' }>
   <head>
@@ -17,7 +17,7 @@ const {title, description, date, image, youtube, author, major, published_on} = 
       <BlogPost
         title={title}
         image={image}
-        date={date}
+        published_on={published_on}
         youtube={youtube}
         author={author}
         major={major}

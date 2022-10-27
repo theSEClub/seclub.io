@@ -6,13 +6,12 @@ export interface Props {
   title: String;
   author: String;
   major: String;
-  date: String;
   image: String;
   youtube: String;
   published_on: String;
 }
 
-const { title, date, image, youtube, author, major, published_on } = Astro.props;
+const { title, image, youtube, author, major, published_on } = Astro.props;
 ---
 
 <article class="max-w-5xl mx-auto px-3">
