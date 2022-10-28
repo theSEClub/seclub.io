@@ -8,5 +8,9 @@ export const get = () =>
     title: "The SE Club Blog",
     description: "A Website for the SE Club",
     site: import.meta.env.SITE,
-    items: import.meta.glob("./posts/**/*.md"),
+    items: posts.map((post) => ({
+      link: post.url,
+      title: post.frontmatter.title,
+      pubDate: post.frontmatter.published_on,
+    }))
 });

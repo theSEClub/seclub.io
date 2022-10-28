@@ -5,7 +5,7 @@ published_on: "Thu, 27 Oct 2022"
 image: "/images/introducing-astro.jpg"
 tags: ["astro"]
 layout: "../../layouts/BlogPostLayout.astro"
-youtube: "OmtVQgWlhN0"
+youtube: "gxBkghlglTg"
 author: "Khaled Redhwan"
 major: "Software Engineering Instructor"
 ---
